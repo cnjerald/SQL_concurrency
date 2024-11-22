@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
+    <script src="/js/ajax_controller.js"></script>
 </head>
+
 <body>
     <h1>Welcome to the Main Page</h1>
-    <p>{{{message}}}</p>  
+    <input class="read-ID" type="input" placeholder="AppID to Read">
+    <input class="delay" type="input" placeholder="delay">
+    <input class="read-btn" type="button" value="Read!" id="read-btn">
+    <br>
+    <input class="write-btn" type="button" value="Write" id="write-btn">
+    <table>
+  <thead>
+    <tr>
+      <th>AppID</th>
+      <th>Name</th>
+      <th>Release Date</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+    <tr>
+      <td>{{AppID}}</td>
+      <td>{{Name}}</td>
+      <td>{{ReleaseDate}}</td>
+      <td>{{Price}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
 </body>
 </html>

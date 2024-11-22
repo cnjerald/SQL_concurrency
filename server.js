@@ -37,23 +37,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('/', index);
 
-connectNode1().then(() => {
-  console.log('Node1 is connected!');
-}).catch((err) => {
-  console.error('Error connecting to Node1:', err);
-});
-
-connectNode2().then(() => {
-  console.log('Node2 is connected!');
-}).catch((err) => {
-  console.error('Error connecting to Node1:', err);
-});
-
-connectNode3().then(() => {
-  console.log('Node3 is connected!');
-}).catch((err) => {
-  console.error('Error connecting to Node1:', err);
-});
 
 
 app.listen(port,()=>{
