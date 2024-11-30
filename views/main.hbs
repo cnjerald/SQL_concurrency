@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
+    <script src="/js/ajax_controller.js"></script>
 </head>
+
 <body>
     <h1>Welcome to the Main Page</h1>
-    <p>{{{message}}}</p>  
+    <input class="read-ID" type="input" placeholder="AppID to Read">
+    <input class="delay" type="input" placeholder="delay">
+    <input class="read-btn" type="button" value="Read!" id="read-btn">
+    <br>
+
+    <input class="writeID" type="input" placeholder="AppID to Write">
+    <input class="newVal" type = "input" placeholder="Value to add.">
+    <input class="delay1" type="input" placeholder="delay">
+    <input class="write-btn" type="button" value="Write" id="write-btn">
+
+    <table>
+    
+    <table id="data-table" border="1" style="width: 100%; margin-top: 20px;">
+        <thead>
+            <tr>
+                <th>App ID</th>
+                <th>Name</th>
+                <th>Release Date</th>
+                <th>Peak CCU</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data rows will be appended here dynamically -->
+        </tbody>
+    </table>
+
+
+</table>
 </body>
 </html>
