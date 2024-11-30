@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const index = require('./routes/index');
 const { connectNode1, connectNode2, connectNode3 } = require('./sql_conn.js');
 const app = express();
-const port = 3000;
+const port = 80;
 
 // Session Management
 app.use(session({
