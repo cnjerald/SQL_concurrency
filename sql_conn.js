@@ -5,7 +5,7 @@ const mysql = require('mysql2');
 
 // Create a connection
 const node1Pool = mysql.createPool({
-  host: '3306',     // Database host
+  host: '10.2.0.222/16',     // Database host
   user: 'root', // Database username
   password: '1234', // Database password
   port: 22222,
@@ -18,7 +18,7 @@ const node1Pool = mysql.createPool({
 });
 
 const node2Pool = mysql.createPool({
-  host: '3306',     // Database host
+  host: '10.2.0.223/16',     // Database host
   user: 'root', // Database username
   password: '1234', // Database password
   port: 22232,
@@ -30,7 +30,7 @@ const node2Pool = mysql.createPool({
 });
 
 const node3Pool = mysql.createPool({
-  host: '3306',     // Database host
+  host: '10.2.0.224/16',     // Database host
   user: 'root', // Database username
   password: '1234', // Database password
   port: 22242,
